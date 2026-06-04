@@ -1,0 +1,24 @@
+{{- /* partials/lastsync.html
+  Usage: {{ include "partials/lastsync.html" "/archlinux" "72h" }}
+
+  Arg0: directory
+  Arg1: threshold duration (Go duration string, e.g. "24h", "7h30m", "15m")
+*/ -}}
+
+{{- $dir := index .Args 0 -}}
+{{- $threshold := index .Args 1 -}}
+{{- $file := printf "%s/.lastshorksync" $dir -}}
+
+{{- if fileExists $file -}}
+  {{- $tStr := (readFile $file | trim) -}}
+  {{- $t := (toDate "Mon, 02 Jan 2006 15:04:05 -0700" $tStr) -}}
+  {{- $age := (now | dateModify (printf "-%s" $threshold)) -}}
+
+  {{- if $t.After $age -}}
+    <div class="sync-good">{{ $tStr | humanize "time" }}</div>
+  {{- else -}}
+    <div class="sync-bad">{{ $tStr | humanize "time" }}</div>
+  {{- end -}}
+{{- else -}}
+  <div class="sync-bad">never</div>
+{{- end -}}
