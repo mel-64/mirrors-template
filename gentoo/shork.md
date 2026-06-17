@@ -15,7 +15,7 @@ sync-uri = rsync://mirrors.shork.ch/gentoo
 
 **Portage distfile mirror**
 
-Add to `/etc/portage/repos.conf`:
+Add to `/etc/portage/make.conf`:
 
 ```
 GENTOO_MIRRORS=" \
