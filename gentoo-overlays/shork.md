@@ -8,8 +8,9 @@
 | `./librewolf`       | Overlay Mirror                             | {{ include $calctime "/gentoo-overlays/librewolf" "60m"}}   |
 | `./steam`           | Overlay Mirror                             | {{ include $calctime "/gentoo-overlays/steam" "60m"}}       |
 
+<br>
 
-## Usage
+### Usage
 Add to `/etc/portage/repos.conf`:
 
 ```
