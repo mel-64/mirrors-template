@@ -6,7 +6,7 @@
 | `./hypr`            | Overlay Mirror                             | {{ include $calctime "/gentoo-overlays/hypr" "60m"}}        |
 | `./kde`             | Overlay Mirror                             | {{ include $calctime "/gentoo-overlays/kde" "60m"}}         |
 | `./librewolf`       | Overlay Mirror                             | {{ include $calctime "/gentoo-overlays/librewolf" "60m"}}   |
-| `./meldoy`          | Overlay Mirror                             | {{ include $calctime "/gentoo-overlays/melody" "60m"}}      |
+| `./melody`          | Overlay Mirror                             | {{ include $calctime "/gentoo-overlays/melody" "60m"}}      |
 | `./steam`           | Overlay Mirror                             | {{ include $calctime "/gentoo-overlays/steam" "60m"}}       |
 
 <br>
