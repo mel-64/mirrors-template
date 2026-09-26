@@ -2,12 +2,12 @@
 
 | Directory           | Description                                | Last successful sync                                        |
 |---------------------|--------------------------------------------|-------------------------------------------------------------|
-| `./guru`            | Overlay Mirror                             | {{ include $calctime "/gentoo-overlays/guru" "60m"}}        |
-| `./hypr`            | Overlay Mirror                             | {{ include $calctime "/gentoo-overlays/hypr" "60m"}}        |
-| `./kde`             | Overlay Mirror                             | {{ include $calctime "/gentoo-overlays/kde" "60m"}}         |
-| `./librewolf`       | Overlay Mirror                             | {{ include $calctime "/gentoo-overlays/librewolf" "60m"}}   |
-| `./melody`          | Overlay Mirror                             | {{ include $calctime "/gentoo-overlays/melody" "60m"}}      |
-| `./steam`           | Overlay Mirror                             | {{ include $calctime "/gentoo-overlays/steam" "60m"}}       |
+| `./guru`            | Overlay Mirror                             | {{ include $calctime "/gentoo-overlays/guru" "75m"}}        |
+| `./hypr`            | Overlay Mirror                             | {{ include $calctime "/gentoo-overlays/hypr" "75m"}}        |
+| `./kde`             | Overlay Mirror                             | {{ include $calctime "/gentoo-overlays/kde" "75m"}}         |
+| `./librewolf`       | Overlay Mirror                             | {{ include $calctime "/gentoo-overlays/librewolf" "75m"}}   |
+| `./melody`          | Overlay Mirror                             | {{ include $calctime "/gentoo-overlays/melody" "75m"}}      |
+| `./steam`           | Overlay Mirror                             | {{ include $calctime "/gentoo-overlays/steam" "75m"}}       |
 
 <br>
 
